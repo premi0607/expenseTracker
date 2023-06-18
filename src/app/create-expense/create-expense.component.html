@@ -8,7 +8,7 @@
         </mat-card-header>
         <mat-card-content>
             <form  class="example-form" [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
-                <mat-form-field [style.width.px]=330>
+                <mat-form-field [style.width.px]=250>
                 <mat-label>Category</mat-label>
                 <input  matInput  placeholder=" Expenses made for" formControlName="name"/><br />
                 </mat-form-field>
@@ -16,7 +16,7 @@
                     <mat-error *ngIf="name?.errors?.['required']">{{getErrorMessage()}}</mat-error>
                 </div><br>
               
-                <mat-form-field [style.width.px]=330>
+                <mat-form-field [style.width.px]=250>
                   <mat-label>Amount</mat-label>
                 <input  matInput type="number" placeholder=" Amount " formControlName="amount" /><br />
               </mat-form-field>
@@ -25,7 +25,7 @@
                   <mat-error *ngIf="amount?.errors?.['min']">{{getErrorMessageAmt()}}</mat-error>
                 </div><br>
               
-                <mat-form-field [style.width.px]=330>
+                <mat-form-field [style.width.px]=250>
                   <mat-label>Note</mat-label>
                 <input  matInput type="text" placeholder="Description" formControlName="desc" /><br />
                 </mat-form-field>
@@ -33,7 +33,7 @@
                   <mat-error *ngIf="desc?.errors?.['required']">{{getErrorMessage()}}</mat-error>
                 </div><br>
               
-                <mat-form-field [style.width.px]=330>
+                <mat-form-field [style.width.px]=250>
                   <mat-label>Date</mat-label>
                 <input matInput type="date" placeholder=" Date " formControlName="date" /><br />
                 </mat-form-field>

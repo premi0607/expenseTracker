@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIcon, MatIconModule} from '@angular/material/icon';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayExpenseComponent } from './display-expense/display-expense.component';
@@ -17,6 +18,7 @@ import { UpdateExpenseComponent } from './update-expense/update-expense.componen
 import { DisplayCardComponent } from './display-card/display-card.component';
 import { CreateExpenseComponent } from './create-expense/create-expense.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SavingsGoalComponent } from './savings-goal/savings-goal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DisplayExpenseComponent,
     UpdateExpenseComponent,
     DisplayCardComponent,
-    CreateExpenseComponent
+    CreateExpenseComponent,
+    SavingsGoalComponent
   ],
   imports: [
     BrowserModule,

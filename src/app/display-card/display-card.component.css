@@ -14,7 +14,6 @@
   .example-card {
     max-width: 600px;
     
-    text-align: center;
   }
   
   .example-header-image {
@@ -25,13 +24,26 @@
   .container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
   h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Poppins';
     color: rgb(232, 10, 114);
+  }
+  h2{
+    font-family: 'Poppins';
+  }
+
+  .contain {
+    max-width: 19rem;
+    border-radius: 1rem;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 3px 50px 50px 0px rgba(50, 6, 245, 0.1);
+    background-color: white;
+    text-align: center;
   }

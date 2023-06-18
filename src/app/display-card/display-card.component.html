@@ -1,3 +1,9 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
 <body>
     <div class="container">
     <mat-card class="example-card">
@@ -8,12 +14,15 @@
         </mat-card-header>
         <img mat-card-image src="https://cdni.iconscout.com/illustration/premium/thumb/woman-calculating-left-balance-in-account-7131193-5783301.png?f=webp" alt="Photo of a Shiba Inu">
         <mat-card-content>
-          <h1>Balance : {{newBalance | currency:'INR'}}</h1><br>
-          <h2><span style="color: rgb(244, 38, 38);">Outcome 🔻 :  </span>{{outcome | currency:'INR'}}</h2>
-          <h2><span style="color: rgb(10, 198, 26);">Income  💲 : </span>{{income | currency:'INR'}}</h2>
+          <h1>Balance <span style= "float: right;">{{newBalance | currency:'INR'}}</span></h1><br>
+          <h2><span style="color: rgb(244, 38, 38);">Outcome 🔻  </span><span style= "float: right;">{{outcome | currency:'INR'}}</span></h2>
+          <h2><span style="color: rgb(10, 198, 26);">Income   💲 </span><span style= "float: right;">{{income | currency:'INR'}}</span></h2>
           <br>
         </mat-card-content>
-      </mat-card>
+      </mat-card><br><br>
+      <div class="contain">
+        <h1>Hurray You Saved {{newBalance | currency:'INR'}}🎉🎉</h1>
+      </div>
     </div>
 </body>
 

@@ -21,13 +21,13 @@
 }
 
 .container {
-  padding: 20px;
+
   position: relative;
   width: 100%;
   max-width: 400px;
-  top: 400px;
-  left: 50%;
-  transform: translate(-130%, -130%);
+  top: 200px;
+  left:50%;
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   
 }
@@ -41,10 +41,26 @@
 
 .content{
   color: rgb(120, 122, 124);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .info{
   background-color: rgb(215, 218, 220);
 }
 
+.contain {
+  max-width: 19rem;
+  border-radius: 1rem;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 3px 50px 50px 0px rgba(50, 6, 245, 0.1);
+  background-color: white;
+  text-align: center;
+}
+h1{
+  font-size: 30px;
+  font-family: 'Poppins';
+}
+h2{
+  font-family: 'Poppins';
+}
