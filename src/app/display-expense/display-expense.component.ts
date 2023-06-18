@@ -12,6 +12,7 @@ export class DisplayExpenseComponent {
 
   expense:any=[];
   DelId:any;
+  outcome:any=0;
   newmovie:any={
     "name": "",
     "amount": 0,
@@ -26,8 +27,16 @@ export class DisplayExpenseComponent {
       .subscribe((val: any) => {
         this.expense = val;
         console.log(val);
+        this.getamt();
       });
   }
+
+  getamt(){
+    for (var val of this.expense){
+      this.outcome += val.amount;
+    }
+  }
+
 
   DelMovie(ex: any) {
     this.DelId = ex.id;

@@ -45,7 +45,7 @@
 }
 
 .info{
-  background-color: rgb(215, 218, 220);
+  background-color: rgb(242, 245, 246);
 }
 
 .contain {
@@ -63,4 +63,28 @@ h1{
 }
 h2{
   font-family: 'Poppins';
+}
+
+.container1{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  top: 100px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.contain1{
+  max-width: 19rem;
+  border-radius: 1rem;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 3px 50px 50px 0px rgba(50, 6, 245, 0.1);
+  background-image: linear-gradient(to right, rgb(74, 62, 245) , rgb(235, 23, 154));
+  text-align: center;
+  color: aliceblue;
+
 }

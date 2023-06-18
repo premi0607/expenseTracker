@@ -6,6 +6,11 @@
 </head>
 <div class="info">
 <body>
+  <div class="container1">
+    <div class="contain1">
+      <h1>Your Total Expense {{outcome}}</h1>
+    </div>
+  </div>
     <div class="container" *ngFor = "let ex of expense">
         <div class ="contain">
               <h1>{{ex.amount | currency: 'INR' }}<p style="float:right"> </p></h1>
@@ -18,6 +23,7 @@
              </div> 
             <br><br>
     </div>
+
 
 </body>  
 </div> 
