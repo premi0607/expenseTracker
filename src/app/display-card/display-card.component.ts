@@ -25,9 +25,12 @@ export class DisplayCardComponent {
       this.budget = val;
       console.log(this.budget);
       this.getBudget();
+      this.getExpense();
     });
 
+  }
 
+  getExpense(){
     this.http
       .get('https://648a952117f1536d65e94eb1.mockapi.io/expense')
       .subscribe((val: any) => {
