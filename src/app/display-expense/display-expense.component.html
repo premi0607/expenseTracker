@@ -8,7 +8,8 @@
 <body>
   <div class="container1">
     <div class="contain1">
-      <h1>Your Total Expense {{outcome}}</h1>
+      <h1>Your Total Expense </h1>
+      <h1>{{outcome | currency: 'INR'}}</h1>
     </div>
   </div>
     <div class="container" *ngFor = "let ex of expense">
