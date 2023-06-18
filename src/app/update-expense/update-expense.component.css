@@ -1,0 +1,19 @@
+body{
+  padding-left: 50px;
+  background-color: rgb(115, 115, 225);
+  background-image: linear-gradient(to right, rgb(74, 62, 245) , rgb(235, 23, 154));
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.example-header-image {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/422/040/non_2x/edit-icon-vector-illustration.jpg');
+  background-size: cover;
+}

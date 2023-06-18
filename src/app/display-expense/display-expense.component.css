@@ -1,0 +1,50 @@
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.container {
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  top: 400px;
+  left: 50%;
+  transform: translate(-130%, -130%);
+  -ms-transform: translate(-50%, -50%);
+  
+}
+.example-card{
+  padding: 20px;
+  color: rgb(18, 18, 18);
+  /* background-image: linear-gradient(to right, rgb(102, 3, 66) , rgb(12, 8, 94)); */
+  box-shadow: 5px 5px 10px 10px rgba(240, 139, 213, 0.374);
+  
+}
+
+.content{
+  color: rgb(120, 122, 124);
+  font-size: 15px;
+}
+
+.info{
+  background-color: rgb(215, 218, 220);
+}
+

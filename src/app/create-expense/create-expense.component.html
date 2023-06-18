@@ -1,0 +1,51 @@
+<body>
+    <div class="container">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Add</mat-card-title>
+          <mat-card-subtitle>Add your Expense Here...</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form  class="example-form" [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+                <mat-form-field [style.width.px]=330>
+                <mat-label>Category</mat-label>
+                <input  matInput  placeholder=" Expenses made for" formControlName="name"/><br />
+                </mat-form-field>
+                <div *ngIf="name?.invalid && name?.touched">
+                    <mat-error *ngIf="name?.errors?.['required']">{{getErrorMessage()}}</mat-error>
+                </div><br>
+              
+                <mat-form-field [style.width.px]=330>
+                  <mat-label>Amount</mat-label>
+                <input  matInput type="number" placeholder=" Amount " formControlName="amount" /><br />
+              </mat-form-field>
+                <div *ngIf="amount?.invalid && amount?.touched">
+                  <mat-error *ngIf="amount?.errors?.['required']">{{getErrorMessage()}}</mat-error>
+                  <mat-error *ngIf="amount?.errors?.['min']">{{getErrorMessageAmt()}}</mat-error>
+                </div><br>
+              
+                <mat-form-field [style.width.px]=330>
+                  <mat-label>Note</mat-label>
+                <input  matInput type="text" placeholder="Description" formControlName="desc" /><br />
+                </mat-form-field>
+                <div *ngIf="desc?.invalid && desc?.touched">
+                  <mat-error *ngIf="desc?.errors?.['required']">{{getErrorMessage()}}</mat-error>
+                </div><br>
+              
+                <mat-form-field [style.width.px]=330>
+                  <mat-label>Date</mat-label>
+                <input matInput type="date" placeholder=" Date " formControlName="date" /><br />
+                </mat-form-field>
+                <div *ngIf="date?.invalid && date?.touched">
+                <mat-error *ngIf="date?.errors?.['required']">{{getErrorMessage()}}</mat-error>
+                </div><br>
+              
+                <button  mat-raised-button color="accent" type="submit">Save</button>
+              
+              </form>
+        </mat-card-content>
+      </mat-card>    
+    </div>
+</body>
+    

@@ -1,0 +1,22 @@
+<div class="info">
+<body>
+    <div class="container" *ngFor = "let ex of expense">
+        <mat-card [style.width.px]=1000 class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{ex.name}}<p style="float:right"> </p></mat-card-title>
+              <mat-card-subtitle class="content">{{ex.amount | currency: 'INR' }}</mat-card-subtitle>
+              <mat-card-subtitle class="content">{{ex.desc}}</mat-card-subtitle>
+            </mat-card-header>
+            
+            <mat-card-actions align ="end">
+              <div class="example-button-row">
+              <button mat-raised-button color="primary" (click)="UpdateExpense(ex.id)">EDIT</button>
+              <button mat-raised-button color="accent" type="submit" (click)="DelMovie(ex)">REMOVE</button>
+              </div>
+            </mat-card-actions>
+            
+          </mat-card><br><br>
+    </div>
+
+</body>  
+</div> 

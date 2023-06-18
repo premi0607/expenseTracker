@@ -1,0 +1,20 @@
+<body>
+    <div class="container">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Hi, Premikkha!</mat-card-title>
+          <mat-card-subtitle>Welcome Back</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://cdni.iconscout.com/illustration/premium/thumb/woman-calculating-left-balance-in-account-7131193-5783301.png?f=webp" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h1>Balance : {{newBalance | currency:'INR'}}</h1><br>
+          <h2><span style="color: rgb(244, 38, 38);">Outcome 🔻 :  </span>{{outcome | currency:'INR'}}</h2>
+          <h2><span style="color: rgb(10, 198, 26);">Income  💲 : </span>{{income | currency:'INR'}}</h2>
+          <br>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</body>
+
+

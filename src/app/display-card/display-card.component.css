@@ -1,0 +1,37 @@
+/* .container {
+    max-width: 800px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 3px 50px 50px 0px rgba(50, 6, 245, 0.1);
+    background-color: rgb(174, 14, 76);
+    color: aliceblue;
+    padding:50px
+  }*/
+  body {
+    align-content: center;
+    background-image: linear-gradient(to right, rgb(74, 62, 245) , rgb(235, 23, 154));
+  } 
+  .example-card {
+    max-width: 600px;
+    
+    text-align: center;
+  }
+  
+  .example-header-image {
+    background-image: url('https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?b=1&s=612x612&w=0&k=20&c=7hgSq1L2mpIbpuuw00KELApMpmZfBkZ-RBxn3Qps5zQ=');
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(232, 10, 114);
+  }
